@@ -4,6 +4,7 @@
 # Reference: https://docs.github.com/en/code-security/reference/supply-chain-security/dependabot-options-reference
 version: 2
 updates:
+
   - package-ecosystem: 'github-actions'
     directory: '/'
     open-pull-requests-limit: 15
@@ -25,12 +26,9 @@ updates:
     cooldown:
       default-days: 7
     ignore:
-      # The adapter declares Node 22; a major @types/node bump would silently raise the
-      # assumed runtime API surface.
       - dependency-name: '@types/node'
         update-types:
           - 'version-update:semver-major'
-      # typescript-eslint (via @iobroker/eslint-config) declares a peer range that ends
-      # below TypeScript 7, and TypeScript 7 no longer exposes the API it loads.
       - dependency-name: 'typescript'
-        update-types: ['version-update:semver-major']
+        update-types:
+          - 'version-update:semver-major'
