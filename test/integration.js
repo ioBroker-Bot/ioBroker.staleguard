@@ -119,12 +119,13 @@ tests.integration(path.join(__dirname, '..'), {
                 // The start grace gives the other old state one full deadline first.
                 await waitFor(get.bind(null, `${old}.status`), 'stale', 90_000);
                 expect(await get(`${old}.stale`)).to.equal(true);
-                expect(await get('staleguard.0.summary.stale')).to.equal(2);
+                // The summary is written after the watch states of the same cycle.
+                await waitFor(get.bind(null, 'staleguard.0.summary.stale'), 2, 5_000);
 
                 await call(setState, restoredId, { val: 2, ack: true });
                 await waitFor(get.bind(null, `${restored}.status`), 'ok', 20_000);
                 expect(await get(`${restored}.stale`)).to.equal(false);
-                expect(await get('staleguard.0.summary.stale')).to.equal(1);
+                await waitFor(get.bind(null, 'staleguard.0.summary.stale'), 1, 5_000);
             });
         });
     },
