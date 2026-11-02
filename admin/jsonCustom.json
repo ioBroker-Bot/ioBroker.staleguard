@@ -27,7 +27,7 @@
         "restartAttempts": {
             "type": "number",
             "label": "Instance restarts per outage",
-            "help": "0 = off. Only for states of another adapter instance.",
+            "help": "0 = off. Restarts the whole instance of the state; for javascript.0 that is every script. Only for states of another adapter instance.",
             "min": 0,
             "max": 5,
             "default": 0,

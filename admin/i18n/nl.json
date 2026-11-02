@@ -1,5 +1,5 @@
 {
-    "0 = off. Only for states of another adapter instance.": "0 = uit. Alleen voor statussen van een andere adapterinstantie.",
+    "0 = off. Restarts the whole instance of the state; for javascript.0 that is every script. Only for states of another adapter instance.": "0 = uit. Herstart de hele instantie van de status; bij javascript.0 dus alle scripts. Alleen voor statussen van een andere adapterinstantie.",
     "Any update": "Elke update",
     "Check interval (s)": "Controle-interval (s)",
     "Cloud adapters often rewrite the same value; use 'value change' to catch frozen data.": "Cloudadapters herschrijven vaak dezelfde waarde; gebruik 'waardeverandering' om bevroren gegevens op te vangen.",

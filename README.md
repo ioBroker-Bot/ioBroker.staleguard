@@ -107,6 +107,8 @@ Restarts are only possible for states of another adapter instance, not for `0_us
 or `system` states.
 
 For an adapter in schedule mode (it runs on a timetable, e.g. `ical`), a restart runs it at once.
+Such an adapter writes its states only when it runs, so set the deadline well above its schedule
+interval; otherwise the normal pause between two runs raises an alarm.
 
 A restart always affects the whole instance. For a heartbeat written by a script in
 `javascript.0`, a restart restarts every script of that instance; leave restarts off there unless
@@ -141,6 +143,9 @@ is disabled, its channel is removed.
     Placeholder for the next version (at the beginning of the line):
     ### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (typhosj) The restart setting warns that a restart affects the whole instance, e.g. every script of `javascript.0`
+* (typhosj) README: set the deadline of a schedule-mode adapter well above its schedule interval
 
 ### 0.1.1 (2026-10-24)
 * (typhosj) Log messages are always in English; notifications still use the system language

@@ -1,5 +1,5 @@
 {
-    "0 = off. Only for states of another adapter instance.": "0 = 关闭。仅适用于另一个适配器实例的状态。",
+    "0 = off. Restarts the whole instance of the state; for javascript.0 that is every script. Only for states of another adapter instance.": "0 = 关闭。重启该状态所属的整个实例；对于 javascript.0 即所有脚本。仅适用于另一个适配器实例的状态。",
     "Any update": "任何更新",
     "Check interval (s)": "检查间隔（秒）",
     "Cloud adapters often rewrite the same value; use 'value change' to catch frozen data.": "云适配器经常重写相同的值；使用“值更改”来捕获冻结数据。",

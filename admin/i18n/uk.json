@@ -1,5 +1,5 @@
 {
-    "0 = off. Only for states of another adapter instance.": "0 = вимкнено. Лише для станів іншого екземпляра адаптера.",
+    "0 = off. Restarts the whole instance of the state; for javascript.0 that is every script. Only for states of another adapter instance.": "0 = вимкнено. Перезапускає весь екземпляр стану; для javascript.0 це всі скрипти. Лише для станів іншого екземпляра адаптера.",
     "Any update": "Будь-яке оновлення",
     "Check interval (s)": "Інтервал перевірки (с)",
     "Cloud adapters often rewrite the same value; use 'value change' to catch frozen data.": "Хмарні адаптери часто переписують те саме значення; використовуйте «зміну значення», щоб перехопити заморожені дані.",

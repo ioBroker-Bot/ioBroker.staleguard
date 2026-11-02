@@ -1,5 +1,5 @@
 {
-    "0 = off. Only for states of another adapter instance.": "0 = aus. Nur für States einer anderen Adapter-Instanz.",
+    "0 = off. Restarts the whole instance of the state; for javascript.0 that is every script. Only for states of another adapter instance.": "0 = aus. Startet die ganze Instanz des States neu, bei javascript.0 also alle Skripte. Nur für States einer anderen Adapter-Instanz.",
     "Any update": "Jede Aktualisierung",
     "Check interval (s)": "Prüftakt (s)",
     "Cloud adapters often rewrite the same value; use 'value change' to catch frozen data.": "Cloud-Adapter schreiben oft denselben Wert erneut; mit „Wertänderung“ werden eingefrorene Daten erkannt.",

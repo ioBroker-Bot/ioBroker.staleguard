@@ -10,5 +10,5 @@
     "Any update": "Any update",
     "Value change": "Value change",
     "Instance restarts per outage": "Instance restarts per outage",
-    "0 = off. Only for states of another adapter instance.": "0 = off. Only for states of another adapter instance."
+    "0 = off. Restarts the whole instance of the state; for javascript.0 that is every script. Only for states of another adapter instance.": "0 = off. Restarts the whole instance of the state; for javascript.0 that is every script. Only for states of another adapter instance."
 }
